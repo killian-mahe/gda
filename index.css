@@ -1,0 +1,214 @@
+@font-face{/*La commande font-face à pour but de télécharger une police d'écriture dans le dossier correspondant*/
+
+	font-family: 'Aller';
+	src: url('../fonts/Aller/Aller_Rg.ttf');
+}
+
+body{/*La commande body définit le corps de la page*/
+
+	display: flex;
+	font-family: 'Aller', Verdana;
+	flex-direction: column;
+	margin: 0px;
+	width: 100%;
+	background-image: url('Images/lycée_cours.jpg');
+	background-attachment: fixed;
+}
+
+header{/*La commande header définit le haut de la page*/
+
+	background-color: rgb(235, 235, 235);
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 200px;
+	box-shadow: 4px 0px 8px black;
+}
+
+#haut_de_page{
+
+	display: flex;
+	justify-content: space-around;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 40px;
+}
+
+nav{/*La commande nav définit la barre de navigation*/
+
+	list-style-type:none;
+	display: flex;
+	padding-bottom: 0px;
+	width: 100%;
+	background-color: #A19A8F;
+	position: fixed;
+	opacity: 0.75;
+	box-shadow: 4px 0px 8px black;
+}
+
+footer{/*Cette commande définit le pied de page*/
+
+	background-color: rgb(235, 235, 235);
+	padding-bottom: 100px;
+	display: flex;
+	justify-content: space-around;
+
+}
+
+nav a{/*nav a est destiné à l'esthétique*/
+
+	text-decoration: none;
+	color: white;
+	background-color: #A19A8F;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 10px;
+	padding-top: 10px;
+
+}
+
+nav a:hover{
+
+	color: #A19A8F;
+	background-color: white;
+	-webkit-transition-duration: 0.5s;
+}
+
+#compte{
+
+	font-size: 0.8em;
+}
+
+section{/*section est une commande définissant un bloc*/
+
+	padding-top: 10px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(235, 235, 235);
+	box-shadow: 4px 0px 8px black;
+}
+
+#presence{/*Ceci est un onglet de la barre de navigation*/
+
+	border: solid black 0.25px;
+	border-radius: 5px 5px 5px;
+	width: 90%;
+	padding: 10px;
+	box-shadow: 2px 0px 4px black;
+	background-color: rgb(240, 240, 240);
+}
+
+.button {
+    background-color: rgb(222, 92, 67);
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover{
+
+	background-color: white;
+	color: rgb(222, 92, 67);
+	box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24),0 8.5px 25px 0 rgba(0,0,0,0.19);
+}
+
+#fb{
+	list-style-image : url('Images/fb.png');
+	}
+
+#ent{
+	list-style-image : url('Images/ent.png');
+}
+
+::-webkit-scrollbar {									/* Scrollbars */
+	width: 14px;
+	height: 14px;
+	background: #bfb6a3 url(Images/bg-blog-repeat.png) 0 0 repeat;
+}
+
+:-webkit-scrollbar-track-piece {						/* Fond */
+	background: transparent none;
+	border: solid 4px transparent;
+	border-right-width: 8px;
+	margin: 4px;
+	-webkit-box-shadow: inset 1px 1px 0 0 rgb(137,131,117), inset -1px -1px 0 0 rgb(224,220,210);
+}
+::-webkit-scrollbar-track-piece:horizontal {			/* Fond pour la barre du bas */
+	border-right-width: 4px;
+	border-bottom-width: 8px;
+}
+
+::-webkit-scrollbar-thumb {								/* Barre */
+	border: solid 0 transparent;
+	border-right-width: 4px;
+	-webkit-border-radius: 5px;
+	-webkit-border-top-right-radius: 9px 5px;
+	-webkit-border-bottom-right-radius: 9px 5px;
+	-webkit-box-shadow: inset 0 0 0 1px rgb(79,79,79), inset 0 0 0 6px rgb(102,102,102);
+}
+
+::-webkit-scrollbar-thumb:hover {						/* Barre */
+	-webkit-box-shadow: inset 0 0 0 1px rgb(90,90,90), inset 0 0 0 6px rgb(110,110,110);
+}
+
+::-webkit-scrollbar-thumb:horizontal {					/* Barre du bas */
+	border-right-width: 0;
+	border-bottom-width: 4px;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px 9px;
+	-webkit-border-bottom-left-radius: 5px 9px;
+}
+
+::-webkit-scrollbar-corner {							/* Coin de la fenêtre */
+	background: #bfb6a3 url(images/bg-blog-repeat.png) 0 0 no-repeat;
+}
+
+::-webkit-scrollbar-button {							/* Boutons */
+	height: 26px;
+	background: url(images/webkit-arrows-vert.png) 1px 50% no-repeat, #bfb6a3 url(images/bg-blog-repeat.png) 0 0 no-repeat;
+}
+::-webkit-scrollbar-button:increment {					/* Bouton pour descendre */
+	background-position: -19px 50%;
+}
+::-webkit-scrollbar-button:horizontal {					/* Boutons horizontaux */
+	width: 26px;
+	background: url(images/webkit-arrows-horiz.png) 50% 1px no-repeat, #bfb6a3 url(images/bg-blog-repeat.png) 0 0 no-repeat;
+}
+::-webkit-scrollbar-button:horizontal:increment {		/* Bouton pour aller à droite */
+	background-position: 50% -19px;
+}
+body ::-webkit-scrollbar {
+	background: transparent none;
+}
+
+body ::-webkit-scrollbar-button:horizontal:decrement {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,.1)), color-stop(100%, rgba(255,255,255,.1))) 0 0 repeat, url(images/webkit-arrows-horiz.png) 50% 1px no-repeat, #bfb6a3 url(images/bg-blog-repeat.png) 0 0 no-repeat;
+	background: -webkit-linear-gradient(top, rgba(255,255,255,.1), rgba(255,255,255,.1)) 0 0 repeat, url(images/webkit-arrows-horiz.png) 50% 1px no-repeat, #bfb6a3 url(images/bg-blog-repeat.png) 0 0 no-repeat;
+	background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)) 0 0 repeat, url(images/webkit-arrows-horiz.png) 50% 1px no-repeat, #bfb6a3 url(images/bg-blog-repeat.png) 0 0 no-repeat;
+}
+body ::-webkit-scrollbar-button:horizontal:increment {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,.1)), color-stop(100%, rgba(255,255,255,.1))) 0 0 repeat, url(images/webkit-arrows-horiz.png) 50% -19px no-repeat, #bfb6a3 url(images/bg-blog-repeat.png) 0 0 no-repeat;
+	background: -webkit-linear-gradient(top, rgba(255,255,255,.1), rgba(255,255,255,.1)) 0 0 repeat, url(images/webkit-arrows-horiz.png) 50% -19px no-repeat, #bfb6a3 url(images/bg-blog-repeat.png) 0 0 no-repeat;
+	background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)) 0 0 repeat, url(images/webkit-arrows-horiz.png) 50% -19px no-repeat, #bfb6a3 url(images/bg-blog-repeat.png) 0 0 no-repeat;
+	-webkit-border-radius: 0 0 6px 0;
+}
+body ::-webkit-scrollbar-button:vertical:decrement {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,.2)), color-stop(100%, rgba(255,255,255,.1))) 0 0 repeat, url(images/webkit-arrows-vert.png) 1px 50% no-repeat, #bfb6a3 url(images/bg-blog-repeat.png) 0 0 no-repeat;
+	background: -webkit-linear-gradient(top, rgba(255,255,255,.1), rgba(255,255,255,.1)) 0 0 repeat, url(images/webkit-arrows-vert.png) 1px 50% no-repeat, #bfb6a3 url(images/bg-blog-repeat.png) 0 0 no-repeat;
+	background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)) 0 0 repeat, url(images/webkit-arrows-vert.png) 1px 50% no-repeat, #bfb6a3 url(images/bg-blog-repeat.png) 0 0 no-repeat;
+}
+body ::-webkit-scrollbar-button:vertical:increment {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,.2)), color-stop(100%, rgba(255,255,255,.1))) 0 0 repeat, url(images/webkit-arrows-vert.png) -19px 50% no-repeat, #bfb6a3 url(images/bg-blog-repeat.png) 0 0 no-repeat;
+	background: -webkit-linear-gradient(top, rgba(255,255,255,.1), rgba(255,255,255,.1)) 0 0 repeat, url(images/webkit-arrows-vert.png) -19px 50% no-repeat, #bfb6a3 url(images/bg-blog-repeat.png) 0 0 no-repeat;
+	background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)) 0 0 repeat, url(images/webkit-arrows-vert.png) -19px 50% no-repeat, #bfb6a3 url(images/bg-blog-repeat.png) 0 0 no-repeat;
+	-webkit-border-radius: 0 0 6px 0;
+}
